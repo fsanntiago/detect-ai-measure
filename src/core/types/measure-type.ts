@@ -1,0 +1,1 @@
+type MeasureType = 'WATER' | 'GAS'

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres-shopper
+    image: postgres:14
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRE_USER: postgres
+      POSTGRES_PASSWORD: teste
+      POSTGRES_DB: teste-postgres
+    volumes:
+      - postgres-data:/data/postgres
+    restart: always
+
+volumes:
+  postgres-data:
